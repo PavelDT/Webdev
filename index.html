@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript">
+function displayAlert() {
+    // document.getElementById("demo").innerHTML = "Hello World";
+    alert("Button clicked");
+}
+</script>
 <style>
 .relative 
 {
@@ -13,9 +19,12 @@
 <form action="/action_page.php">
 value one: <input type="text" name="FirstName" value="number"><br>
 value two: <input type="text" name="LastName" value="number"><br>
+<!-- this button is of type submit because it's attached to a form that it will be submitting -->
 <input type="submit" value="Add" style="color:red">
 </form>
 </div>
-
+<!-- this button is type button as its a basic button, and we will make it call js -->
+<button onclick="displayAlert()">Display stuff</button>
+<p id="demo"></p>
 </body>
 </html>
