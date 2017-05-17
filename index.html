@@ -17,14 +17,31 @@ function displayAlert() {
 <body>
 <div class="relative">
 <form action="/action_page.php">
-value one: <input type="text" name="FirstName" value="number"><br>
-value two: <input type="text" name="LastName" value="number"><br>
-<!-- this button is of type submit because it's attached to a form that it will be submitting -->
-<input type="submit" value="Add" style="color:red">
+value one: <input type="text" name="LastName" value="number"><br><script>
+var x = 6;</script>
+ <br>
+value two: <input type="text" name="LastName" value="number"><script>
+var y = 6;</script><br>
+<!-- this button is of type submit because it's attached to a form that it will be submitting, <input type="text" name="LastName" value="number"><br> -->
+<input type="submit" value="Add" style="color:red" <script>
+var z = x + y
+</script>
 </form>
 </div>
 <!-- this button is type button as its a basic button, and we will make it call js -->
 <button onclick="displayAlert()">Display stuff</button>
 <p id="demo"></p>
+<h2>Stored Variable</h2>
+
+<p>x = 5, y = 2, calculate z = x + y, and display z:</p>
+
+<p id="demo"></p>
+
+<script>
+var x = 6;
+var y = value two "number";
+var z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
 </body>
 </html>
